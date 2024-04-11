@@ -38,10 +38,6 @@ p {
 }
 
 .container {
-  /* max-width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
-} */
   max-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
@@ -58,7 +54,12 @@ p {
   }
 }
 .section {
-  padding: 120px 0;
+ padding: 96px 0;
+}
+@media only screen and (min-width: 1158px) {
+  .section {
+    padding: 120px 0;
+  }
 }
 .page-header {
   border-bottom: 1px solid #e7e9fc;
@@ -69,11 +70,9 @@ p {
 @media only screen and (max-width: 767px) {
   .page-header {
     padding: 16px 0 16px;
-  } 
+  }
 }
-
-
-.container-header {
+ .container-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,12 +84,12 @@ p {
 }
 @media only screen and (min-width: 768px) {
   .container-header {
-    
+
   }
 }
 @media only screen and (min-width: 1158px) {
-  .container-header{
-   display: flex; 
+  .container-header {
+    display: flex;
   }
 }
 .nav-page {
@@ -99,7 +98,6 @@ p {
 }
 @media only screen and (min-width: 768px) {
   .nav-page {
-    
   }
 }
 .logo {
@@ -110,17 +108,16 @@ p {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5; 
+  color: #4d5ae5;
 }
 @media only screen and (min-width: 768px) {
-  .logo{
+  .logo {
     margin-right: 120px;
   }
 }
 @media only screen and (min-width: 1158px) {
-  .logo   {
+  .logo {
     margin-right: 76px;
-    
   }
 }
 .logo-web {
@@ -132,12 +129,11 @@ p {
   letter-spacing: 0.54px;
   text-transform: uppercase; */
 }
-.button-menu{
-  
+.button-menu {
   fill: #2f2f37;
 }
 @media only screen and (min-width: 768px) {
-  .button-menu  {
+  .button-menu {
     display: none;
   }
 }
@@ -147,11 +143,11 @@ p {
   gap: 40px;
   color: #2e2f42;
 }
-@media only screen and (max-width:767px) {
-  .nav-list   {
-   display: none; 
+@media only screen and (max-width: 767px) {
+  .nav-list {
+    display: none;
   }
-}    
+}
 .nav-link {
   position: relative;
   display: block;
@@ -159,7 +155,6 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  gap: 40px;
   padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -190,42 +185,43 @@ p {
   display: block;
 }
 @media only screen and (max-width: 767px) {
-  .tel  {
- display: none;
+  .tel {
+    display: none;
   }
 }
 .tel-list {
   display: flex;
   flex-direction: column;
-  /* gap: 40px; */
- 
-}
-@media only screen and (min-width: 768px) {
-  .tel-list  {
-    
-  }
+  gap: 12px;
 }
 @media only screen and (min-width: 1158px) {
-  .tel-list  {
+  .tel-list {
     flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
   }
 }
 .tel-item {
   color: #434455;
 }
 .tel-item-link {
-  display: block;
+  font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: #434455;
+} 
+@media only screen and (min-width: 1158px) {
+  .tel-item-link {   
+ display: block;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
-  padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
 }
-
 .tel-item :hover,
 .tel-item :focus {
   color: #404bbf;
@@ -326,8 +322,6 @@ p {
 }
 @media only screen and (min-width: 1158px) {
   .quality-list {
-    
-    
     align-items: center;
     justify-content: center;
     gap: 24px;
@@ -345,8 +339,8 @@ p {
 } */
 @media only screen and (min-width: 768px) {
   .quality-item {
-   display: flex;
-   flex-direction: row;
+    display: flex;
+    flex-direction: row;
     justify-content: flex-start;
     height: 120px;
     align-items: flex-start;
@@ -356,11 +350,8 @@ p {
 }
 @media only screen and (min-width: 1158px) {
   .quality-item {
-    
-   
     flex-direction: row;
     width: calc((100% - 24px * 3) / 4);
-    
   }
 }
 .quality-wrapper {
@@ -390,8 +381,7 @@ p {
   color: #2e2f42;
 }
 @media only screen and (min-width: 768px) {
-  .quality-subtitle  {
-    
+  .quality-subtitle {
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -403,12 +393,12 @@ p {
   }
 }
 .quality-text {
- font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #434455;
- } 
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
 
 @media only screen and (min-width: 1158px) {
   .quality-text {
@@ -542,7 +532,7 @@ color: #434455;
   align-items: center;
   position: absolute;
   padding: 40px 32px;
-left: 0;
+  left: 0;
   top: 0;
   transform: translatey(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
